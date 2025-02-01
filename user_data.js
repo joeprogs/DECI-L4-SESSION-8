@@ -1,3 +1,5 @@
+// 1st Feb 2025
+
 fetch("https://randomuser.me/api")
   .then((data) => {
     data
@@ -10,9 +12,9 @@ fetch("https://randomuser.me/api")
         console.log(`Email: ${email}`);
       })
       .catch(() => {
-        console.log("Could not get json data.");
+        console.error("Could not get json data.");
       });
   })
   .catch(() => {
-    console.log("Could not get a response.");
+    console.error("Could not get a response.");
   });
